@@ -1,0 +1,45 @@
+.card {
+  .input-group-text {
+    cursor: pointer;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .col-name,
+  .col-status,
+  .col-date {
+    width: 16%;
+  }
+
+  .col-email {
+    word-break: break-all;
+  }
+
+
+
+  .badge {
+    width: 95px;
+  }
+
+  .align-middle {
+    a {
+      cursor: pointer;
+      color: #321fdb;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  td {
+    vertical-align: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}

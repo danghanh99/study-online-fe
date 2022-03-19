@@ -1,0 +1,23 @@
+<div class="c-sidebar-brand">
+</div>
+<ul class="c-sidebar-nav">
+  <li class="c-sidebar-nav-item" type="button" [class.active]="router.isActive(employeesUrl, false)">
+    <a class="c-sidebar-nav-link" (click)="navigateToGeneralListPage()">
+      <i class="c-sidebar-nav-icon cil-room"></i>
+      Rooms
+    </a>
+  </li>
+  <li class="c-sidebar-nav-item" type="button" [class.active]="router.isActive(infoUrl, true)">
+    <a class="c-sidebar-nav-link" (click)="navigateToAccountInfoPage()">
+      <i class="c-sidebar-nav-icon cil-layers"></i>
+      Profile
+    </a>
+  </li>
+  <li class="c-sidebar-nav-item" type="button" [class.active]="router.isActive('/categories', true)">
+    <a class="c-sidebar-nav-link" (click)="navigateToCategoriesPage()">
+      <i class="c-sidebar-nav-icon cil-casino"></i>
+      Categories
+    </a>
+  </li>
+</ul>
+<button class="c-sidebar-minimizer" type="button" (click)="onMinimized()"></button>

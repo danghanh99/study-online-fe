@@ -1,0 +1,43 @@
+<header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+  <a class="c-header-brand d-lg-none pointer" (click)="navigateToHome()">
+    <span class="ml-4">Study Online</span>
+  </a>
+  <div class="c-header-nav d-md-down-none">
+    <li class="c-header-nav-item px-3 h4">
+      <a class="c-header-nav-link pointer" (click)="navigateToHome()">
+        Study Online</a>
+    </li>
+  </div>
+  <ul class="c-header-nav ml-auto mr-4">
+    <li class="c-header-nav-item d-md-down-none mx-2">
+      <a class="c-header-nav-link"> {{ userName }} </a>
+    </li>
+    <li class="c-header-nav-item dropdown">
+      <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+        aria-expanded="false">
+        <div class="c-avatar">
+          <img class="c-avatar-img" src="assets/img/avatars/user.png" alt="user@email.com" />
+        </div>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right pt-0">
+        <div class="dropdown-header bg-light py-2">
+          <strong>{{ 'HEADER.ACCOUNT' | translate }}</strong>
+        </div>
+        <a class="dropdown-item pointer" role="button" (click)="navigateToAccountInfor()">
+          <i class="c-icon mr-3 fa fa-user"></i>
+          {{ 'ACCOUNT_INFORMATION.TITLE' | translate }}
+        </a>
+        <a class="dropdown-item pointer" role="button" (click)="logout()">
+          <i class="c-icon mr-3 cil-account-logout"></i>
+          {{ 'HEADER.LOGOUT' | translate }}
+        </a>
+      </div>
+    </li>
+  </ul>
+  <div class="c-subheader px-3">
+    <ah-loading-spinner></ah-loading-spinner>
+    <div class="h5 breadcrumb text-muted border-0 m-0">
+      {{ title | translate }}
+    </div>
+  </div>
+</header>

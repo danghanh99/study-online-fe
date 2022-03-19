@@ -1,0 +1,67 @@
+<div class="modal-header">
+    <h4 class="modal-title pull-left">
+      {{ groupDetail ? 'Edit room' : 'Create room'}}
+    </h4>
+    <button
+      type="button"
+      class="pull-right close"
+      aria-label="Close"
+      (click)="bsModalRef.hide()"
+      >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <hr class="mt-0 mb-0" />
+  <div [formGroup]="editForm" class="modal-body">
+    <div class="form-group row mb-4">
+        <label for="name" class="col-sm-3 col-form-label">Name</label>
+        <div class="col-sm-9">
+          <input
+            id="name"
+            type="text"
+            class="form-control"
+            formControlName="name"
+            required
+          />
+          <div
+            *ngIf="f.name.invalid && f.name.touched"
+            class="invalid-feedback"
+          >
+            <div *ngIf="f.name.errors?.required">
+              Name is required
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row mb-4">
+        <label for="description" class="col-sm-3 col-form-label">Category</label>
+        <div class="col-sm-9">
+            <select
+            class="form-control d-inline-block" cSelect formControlName="categoryId">
+                <option *ngFor="let item of categories" [value]="item.id">
+                    {{ item.name }}
+                </option>
+              </select>
+        </div>
+      </div>
+      <div class="form-group row mb-4">
+        <label for="description" class="col-sm-3 col-form-label">Description</label>
+        <div class="col-sm-9">
+          <textarea
+            id="description"
+            type="text"
+            class="form-control"
+            formControlName="description"
+          ></textarea>
+        </div>
+      </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="onCancel()">
+      Cancel
+    </button>
+    <button [disabled]="editForm.invalid" type="button" class="btn btn-success" (click)="onSave()">
+      {{ groupDetail ? 'Save' : 'Create'}}
+    </button>
+  </div>
+    

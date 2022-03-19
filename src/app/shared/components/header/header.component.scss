@@ -1,0 +1,14 @@
+header {
+  .pointer {
+    cursor: pointer;
+  }
+
+  .c-subheader {
+    position: relative;
+  }
+  .c-header-toggler {
+    &:focus {
+      outline: none;
+    }
+  }
+}

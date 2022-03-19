@@ -1,0 +1,97 @@
+.card {
+  .style {
+    th,
+    td {
+      border-top: none;
+    }
+  }
+  .main-container {
+    position: relative;
+
+    .back-button {
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+
+    .border-style {
+      border-top: none;
+    }
+
+    b {
+      font-size: 16px;
+    }
+
+    .thead-style {
+      background-color: rgba(0, 0, 21, 0.075);
+      tr {
+        height: auto !important;
+      }
+    }
+
+    .card-body {
+      padding: 0.5rem;
+    }
+    .card {
+      padding: 5px;
+      border: none !important;
+    }
+
+    .row-1 {
+      .info {
+        padding: 8px 25px 25px 25px;
+        tr {
+          height: 60px;
+        }
+        th,
+        td {
+          vertical-align: inherit;
+        }
+        th {
+          width: 28%;
+        }
+        td {
+          width: 72%;
+        }
+        .col-lg-6 {
+          max-width: 49%;
+        }
+        .left-tab {
+          margin-right: 28px;
+        }
+      }
+      .padd {
+        input {
+          padding: 0;
+        }
+      }
+    }
+
+    .badge {
+      width: 95px;
+    }
+    .form-control:disabled {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  .align-center {
+    align-items: center;
+    height: 50px !important;
+  }
+
+  .day {
+    .table td {
+      border: none;
+    }
+  }
+
+  .auto-width {
+    width: auto !important;
+  }
+}
+
+.max-width-500 {
+  max-width: 500px;
+}

@@ -1,0 +1,64 @@
+<div class="c-app flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9">
+        <div class="card-group">
+          <div class="card p-4">
+            <div class="card-body">
+              <h1>{{ 'LOGIN.TITLE' | translate }}</h1>
+              <p class="text-muted">{{ 'LOGIN.SIGN_IN' | translate }}</p>
+              <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="auto-validated">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="cib-gmail"></i>
+                    </span>
+                  </div>
+                  <input class="form-control" type="email" formControlName="email" placeholder="Email" required />
+                  <div *ngIf="f.email.invalid && f.email.touched" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">
+                      {{ 'PROFILE_CREATE.EMAIL_INVALID' | translate }}
+                    </div>
+                    <div *ngIf="f.email.errors.email">
+                      {{ 'PROFILE_CREATE.IS_EMAIL' | translate }}
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group mt-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="cil-lock-locked"></i>
+                    </span>
+                  </div>
+                  <input class="form-control" type="password" formControlName="password" placeholder="Password"
+                    required />
+                  <div *ngIf="f.password.invalid && f.password.touched" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">
+                      {{ 'PROFILE_CREATE.PASSWORD_INVALID' | translate }}
+                    </div>
+                    <div *ngIf="f.password.errors.minlength">
+                      {{ 'PROFILE_CREATE.PASS_MINLENGTH' | translate }}
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column">
+                  <button class="btn btn-info px-4 mt-3" type="submit" [disabled]="loginForm.invalid">
+                    {{ 'LOGIN.TITLE' | translate }}
+                  </button>
+                  <button type="button" class="btn btn-outline-info mt-2" (click)="onNavigateToSignUpPage()">
+                    Sign up
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="card bg-secondary text-white p-4 d-md-down-none">
+            <div class="card-boby d-flex flex-column justify-content-center h-100">
+              <h2 class="ml-auto mr-auto">Study Online</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()" class="auto-validated">
+      
+      <button
+      type="button"
+      class="btn btn-secondary mb-4"
+      (click)="back()"
+      >
+      {{ 'DEVICE_HISTORY.BACK' | translate }}
+    </button>
+      <div class="main-container row">
+        <div class="col-xl-6 col-md-12">
+            
+            <div class="form-group row mb-4">
+              <label for="name" class="col-sm-3 col-form-label">Name</label>
+              <div class="col-sm-9">
+                <input
+                  id="name"
+                  type="text"
+                  class="form-control"
+                  formControlName="name"
+                  required
+                />
+                <div
+                  *ngIf="f.firstName.invalid && f.firstName.touched"
+                  class="invalid-feedback"
+                >
+                  <div *ngIf="f.firstName.errors?.required">
+                    Name is required
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row mb-4">
+              <label for="description" class="col-sm-3 col-form-label">Description</label>
+              <div class="col-sm-9">
+                <input
+                  id="description"
+                  type="text"
+                  class="form-control"
+                  formControlName="description"
+                />
+              </div>
+            </div>
+            <div class="text-right">
+
+        <button
+        type="submit"
+        class="btn btn-success"
+        [disabled]="employeeForm.invalid"
+        >
+        Save
+      </button>
+            </div>
+        </div>
+        </div>
+    </form>
+  </div>
+</div>

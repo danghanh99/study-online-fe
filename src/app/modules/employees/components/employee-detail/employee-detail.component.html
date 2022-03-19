@@ -1,0 +1,36 @@
+<div [formGroup]="infoForm" class="card-body">
+  <div class="input-group max-width-500">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+        <i class="cib-gmail"></i>
+      </span>
+    </div>
+    <input class="form-control" type="email" formControlName="email" placeholder="Email" required />
+    <div *ngIf="f.email.invalid && f.email.touched" class="invalid-feedback">
+      <div *ngIf="f.email.errors.required">
+        {{ 'PROFILE_CREATE.EMAIL_INVALID' | translate }}
+      </div>
+      <div *ngIf="f.email.errors.email">
+        {{ 'PROFILE_CREATE.IS_EMAIL' | translate }}
+      </div>
+    </div>
+  </div>
+  <div class="input-group max-width-500 mt-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+        <i class="cib-opsgenie"></i>
+      </span>
+    </div>
+    <input class="form-control" type="text" formControlName="name" placeholder="Name" required />
+    <div *ngIf="f.name.invalid && f.name.touched" class="invalid-feedback">
+      <div *ngIf="f.name.errors.required">
+        Name is required
+      </div>
+    </div>
+  </div>
+  <div class="max-width-500 text-right mt-2">
+    <button [disabled]="infoForm.invalid" type="button" class="btn btn-success" (click)="updateAccountInfo()">
+      {{ 'PROFILE_CREATE.SAVE' | translate }}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,117 @@
+<div class="card">
+  <div class="card-body">
+    <div *ngIf="!selectedClass" class="row mb-3 ">
+      <div class="d-flex justify-content-end ml-3">
+        <button type="button" (click)="openCreateGroupModal()" class="btn btn-info">
+          <span class="cil-playlist-add btn-icon mr-2"></span>
+          Create room
+        </button>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <ng-container *ngIf="!!selectedClass; else classes">
+        <h2>{{selectedClass.name}}</h2>
+        <div id="jitsi-container" [ngStyle]="{ 'height': 'calc(100vh - 250px)' }"></div>
+      </ng-container>
+      <ng-template #classes>
+        <div>
+
+          <div class="h5 breadcrumb text-muted border-0 m-0 mb-2 p-0">
+            JOINED ROOMS
+          </div>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th scope="col" class="pointer col-name">
+                  {{ 'GENERAL_LIST.NAME' | translate }}
+                  <i class="cil-arrow-top" *ngIf="sortNameType === 1"></i>
+                  <i class="cil-arrow-bottom" *ngIf="sortNameType === 2"></i>
+                </th>
+                <th scope="col" class="col-email">
+                  Description
+                </th>
+                <th scope="col" class="pointer col-date">
+                  Members
+                </th>
+                <th scope="col" class="col-status text-center">
+                  {{ 'GENERAL_LIST.ACTIONS' | translate }}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of allJoinedRoom; let i = index">
+                <td class="align-middle">
+                  {{ item.name }}
+                </td>
+                <td class="align-middle col-email">{{ item.description }}</td>
+                <td class="align-middle">{{ item.members_number }}</td>
+                <td>
+                  <div class="d-flex justify-content-center align-middle">
+                    <button class="btn btn-outline-primary mr-2" (click)="selectClass(item)">
+                      <i class="cil-video"></i>
+                    </button>
+                    <button *ngIf="isRoomAdmin(item.id)" class="btn btn-outline-success mr-2"
+                      (click)="navigateDetail(item.id)">
+                      <i class="cil-description"></i>
+                    </button>
+                    <button *ngIf="!isRoomAdmin(item.id)" class="btn btn-outline-warning"
+                      (click)="openModalWithComponent(item.id, 'out-group', searchParams)">
+                      <i class="cil-account-logout"></i>
+                    </button>
+                    <button *ngIf="isRoomAdmin(item.id)" class="btn btn-outline-danger"
+                      (click)="openModalWithComponent(item.id, 'remove-group', searchParams)">
+                      <i class="cil-trash"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-2">
+
+          <div class="h5 breadcrumb text-muted border-0 m-0 mb-2 p-0">
+            OTHER ROOMS
+          </div>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th scope="col" class="pointer col-name">
+                  {{ 'GENERAL_LIST.NAME' | translate }}
+                  <i class="cil-arrow-top" *ngIf="sortNameType === 1"></i>
+                  <i class="cil-arrow-bottom" *ngIf="sortNameType === 2"></i>
+                </th>
+                <th scope="col" class="col-email">
+                  Description
+                </th>
+                <th scope="col" class="pointer col-date">
+                  Members
+                </th>
+                <th scope="col" class="col-status text-center">
+                  {{ 'GENERAL_LIST.ACTIONS' | translate }}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of filteredOtherGroups; let i = index">
+                <td class="align-middle">
+                  {{ item.name }}
+                </td>
+                <td class="align-middle  col-email">{{ item.description }}</td>
+                <td class="align-middle">{{ item.members_number }}</td>
+                <td>
+                  <div class="d-flex justify-content-center align-middle">
+                    <button class="btn btn-outline-success mr-2" (click)="joinRoom(item.code)">
+                      <i class="cib-addthis"></i>
+
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

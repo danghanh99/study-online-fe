@@ -1,0 +1,76 @@
+<div class="card">
+  <div class="card-body">
+    <div class="d-flex" style="align-items: baseline;">
+      <div class="h4">{{ groupDetail?.name }}</div>
+      <button class="btn btn-outline-primary ml-2" (click)="openEditGroupModal()">
+        <i class="fa fa-pencil"></i>
+      </button>
+      <button class="btn btn-outline-danger ml-2" (click)="openDeleteGroupModal()">
+        <i class="fa fa-trash"></i>
+      </button>
+    </div>
+    <div>Members: {{ groupDetail?.membersNumber }}</div>
+    <div>Category: {{ groupDetail?.category.name }}</div>
+    <div>Description: {{ groupDetail?.description }}</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-xl-6 col-md-12">
+        <div class="h5">List Of Members</div>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Occupation</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of groupDetail?.users; let i = index">
+              <td>{{ item.name }}</td>
+              <td>{{ item.email }}</td>
+              <td>{{ item.gender | titlecase }}</td>
+              <td>{{ item.job.name }}</td>
+              <td>
+                <button class="btn btn-outline-danger" (click)="openRemoveUserModal(item.id)">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-xl-6 col-md-12">
+        <div class="h5">List Of Black Members</div>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Occupation</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of groupDetail?.listBlackMembers; let i = index">
+              <td>{{ item.name }}</td>
+              <td>{{ item.email }}</td>
+              <td>{{ item.gender | titlecase }}</td>
+              <td>{{ item.job.name }}</td>
+              <td>
+                <button class="btn btn-outline-danger" (click)="openRevertUserModal(item.id)">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

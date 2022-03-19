@@ -1,0 +1,321 @@
+{
+  "SIDEBAR": {
+    "LINK_1": "Quản lý nhân viên",
+    "LINK_2": "Quản lý ngày phép",
+    "LINK_4": "Quản lý thiết bị",
+    "LINK_5": "Lịch sử thiết bị",
+    "LINK_6": "Loại ngày phép",
+    "LINK_7": "Loại thiết bị",
+    "LINK_8": "Quản lý yêu cầu nghỉ phép",
+    "LINK_9": "Bảng lương"
+  },
+  "HEADER": {
+    "VIETNAMESE": "Tiếng việt",
+    "ACCOUNT": "Tài khoản",
+    "LOGOUT": "Đăng xuất"
+  },
+  "BODY": {
+    "DEVELOPED_BY": "Được phát triển bởi"
+  },
+  "GENERAL_LIST": {
+    "TITLE": "Danh sách nhân viên",
+    "NAME": "Họ và tên",
+    "BIRTHDAY": "Ngày sinh",
+    "JOIN_DATE": "Ngày vào công ty",
+    "PHONE_NUMBER": "Số điện thoại",
+    "STATUS": "Trạng Thái",
+    "ACTIONS": "Hành động",
+    "PLACEHOLDER": "VD: Nguyen, 2020, ...",
+    "ALL": "Tất cả",
+    "ACTIVE": "Đang hoạt động",
+    "FORMER": "Cựu nhân viên",
+    "CREATE_EMPLOYEE_PROFILE": "Tạo hồ sơ nhân viên",
+    "NO_RESULT": "Không có kết quả."
+  },
+  "EMPLOYEE_DETAIL": {
+    "TITLE": "Chi tiết nhân viên",
+    "DEVICE": "Thiết bị được giao",
+    "EMPLOYEE_INFO": "Thông tin chung",
+    "NO_RESULT": "Không có thiết bị nào được bàn giao.",
+    "TITLE_EMP": "Chủ đề",
+    "CONTENT": "Nội dung",
+    "NO_SELECT": "Không chọn",
+    "DAY_OFF_INFO": "Thêm thông tin ngày phép",
+    "DAY": "(Ngày)",
+    "SALARY": "Mức lương",
+    "CERTIFICATE": "Bằng cấp",
+    "UNIVERSITY": "Đại học",
+    "COLLEGE": "Cao đẳng",
+    "INTERMEDIATE": "Trung cấp",
+    "MASTER": "Thạc sĩ",
+    "POSITION": "Chức vụ"
+  },
+  "EMPLOYEE_EDIT": {
+    "TITLE": "Chỉnh sửa hồ sơ nhân viên",
+    "EDIT": "Chỉnh sửa",
+    "DETAIL": "Chi tiết"
+  },
+  "EMPLOYEE_CREATE": {
+    "TITLE": "Tạo hồ sơ nhân viên",
+    "CONFIRM_PASS": "Nhập lại mật khẩu",
+    "PASSWORD_MATCH": "Mật khẩu phải trùng khớp"
+  },
+  "DAY_OFF_TABLE": {
+    "TITLE": "Danh sách ngày phép",
+    "TOTAL_LEAVES": "Tổng phép",
+    "NUMBER_OF_LEAVES_REMAINING": "Phép còn lại",
+    "ACTION": "Hành động",
+    "SUBMIT_TIME_OFF": "Nhập ngày phép",
+    "NO_RESULT": "Không có thông tin ngày phép nào"
+  },
+  "REQUEST_DAY_OFF": {
+    "AUTH": "Xin phép",
+    "FULL_NAME": "Họ và tên",
+    "FROM_DATE": "Từ ngày",
+    "TO_DATE": "Đến ngày",
+    "HAFL_DAY_OFF": "Nghỉ nửa ngày",
+    "DAY_OFF_AVAILABLE": "Số ngày phép đang có",
+    "DAY_OFF_AFTER": "Số ngày phép còn lại sau khi duyệt",
+    "UNPAID_LEAVE": "Cho phép nghỉ không lương",
+    "MORNING_BREAK": "Nghỉ buổi sáng",
+    "AFTERNOON_BREAK": "Nghỉ buổi chiều",
+    "DAY": "ngày",
+    "HOURS_PER_DAY": "Số giờ/ ngày"
+  },
+  "PROFILE_CREATE": {
+    "FIRST_NAME": "Tên",
+    "LAST_NAME": "Họ",
+    "DAY_OFF_INFO": "Thông tin ngày nghỉ",
+    "DAY_OFF_REQUEST": "Lịch sử ngày phép",
+    "HOUR": "Số ngày (ngày)",
+    "FIRST_NAME_INVALID": "Hãy nhập tên",
+    "FIRST_NAME_MIN_LENGTH": "Tên phải trên 2 ký tự",
+    "FIRST_NAME_MAX_LENGTH": "Tên không vượt quá 20 ký tự",
+    "LAST_NAME_INVALID": "Hãy nhập họ",
+    "LAST_NAME_MIN_LENGTH": "Họ phải trên 2 ký tự",
+    "LAST_NAME_MAX_LENGTH": "Họ không vượt quá 20 ký tự",
+    "EMAIL_INVALID": "Hãy nhập email",
+    "IS_EMAIL": "Email không hợp lệ",
+    "BIRTHDAY_INVALID": "Hãy nhập ngày sinh",
+    "PASSWORD_INVALID": "Hãy nhập mật khẩu",
+    "PASS_MINLENGTH": "Mật khẩu phải trên 6 ký tự",
+    "JOIN_DATE_INVALID": "Hãy nhập ngày vào công ty",
+    "PHONE_NUMBER_INVALID": "Hãy nhập số điện thoại",
+    "PHONE_NUMBER_PATTERN": "Số điện thoại phải là số",
+    "PHONE_NUMBER_MINLENGTH": "Số điện thoại phải trên 10 ký tự",
+    "PHONE_NUMBER_MAXLENGTH": "Số điện thoại không vượt quá 12 ký tự",
+    "SALARY_INVALID": "Hãy nhập mức lương",
+    "SALARY_MIN": "Mức lương không được nhỏ hơn 1",
+    "HOURS_INVALID": "Hãy nhập số ngày",
+    "HOURS_MIN": "Số ngày phép không được nhỏ hơn 1",
+    "AVAILABLE_HOURS": "Số ngày có sẵn (ngày)",
+    "MESS_EMAIL": "Email đã tồn tại",
+    "BIRTHDAY_MAX": "Ngày sinh không thể là ngày tương lai",
+    "CREATE_SUCCESS": "Tạo thành công!",
+    "EDIT_SUCCESS": "Chỉnh sửa thành công!",
+    "DAY_OFF_CATE": "Loại ngày phép",
+    "CLOSE": "Đóng",
+    "SAVE": "Lưu"
+  },
+  "PROFILE_STATUS_CHANGE": {
+    "TITLE_FORMER": "Xác nhận vô hiệu hóa nhân viên",
+    "PARAM_FORMER": "Trạng thái của nhân viên này sẽ được thay đổi thành 'CỰU NHÂN VIÊN'. Bạn có muốn tiếp tục?",
+    "TITLE_ACTIVE": "Xác nhận tái kích hoạt nhân viên",
+    "PARAM_ACTIVE": "Trạng thái của nhân viên này sẽ được thay đổi thành 'ĐANG HOẠT ĐỘNG'. Bạn có muốn tiếp tục?",
+    "ABORT": "Không",
+    "ACCEPT": "Có"
+  },
+  "DEVICE_TABLE": {
+    "TITLE": "Danh sách thiết bị",
+    "ALL": "Tất cả",
+    "CATEGORY_NAME": "Loại thiết bị",
+    "ASSIGNED_TO": "Được giao cho",
+    "EMPTY": "Trống",
+    "PRICE": "Giá tiền",
+    "DESCRIPTION": "Mô tả",
+    "CREATE_DEVICE": "Tạo thiết bị",
+    "MOVE_TO_INVENTORY": "Chuyển vào kho",
+    "DISCARD": "Loại bỏ",
+    "ASSIGN": "Giao thiết bị",
+    "HISTORY": "Lịch sử",
+    "EDIT": "Chỉnh sửa",
+    "DELETE": "Xóa"
+  },
+  "LOGIN": {
+    "TITLE": "Đăng nhập",
+    "SIGN_IN": "Đăng nhập vào tài khoản của bạn",
+    "EMAIL": "Email",
+    "PASS": "Mật khẩu",
+    "FORGOT_PASSWORD": "Quên mật khẩu?",
+    "SIGN_IN_GG": "Đăng nhập với google"
+  },
+  "DAY_OFF_CATEGORIES_PAGE": {
+    "TITLE": "Danh sách loại ngày phép",
+    "NAME": "Tên",
+    "INACTIVE": "Không hoạt động",
+    "CREATE": "Tạo loại ngày phép",
+    "DELETE_TITLE": "Xóa loại ngày phép",
+    "EDIT_TITLE": "Chỉnh sửa loại ngày phép",
+    "CREATE_TITLE": "Tạo loại ngày phép",
+    "DELETE_CONFIRM": "Thao tác này không thể hoàn tác vui lòng xác nhận lại!",
+    "NAME_REQUIRED": "Hãy nhập tên!",
+    "NAME_MINLENGTH": "Tên phải có ít nhất 2 ký tự",
+    "NAME_MAXLENGTH": "Tên không được phép vượt quá 20 ký tự",
+    "DAY_OFF": "Số phép mặc định (ngày)",
+    "DAYS_REQUIRED": "Hãy nhập số phép mặc định!",
+    "DAYS_MIN": "Số phép mặc định không được nhỏ hơn 1",
+    "ALL_EMPLOYEES": "Tất cả nhân viên",
+    "CHOOSE_EMPLOYEE": "Chọn từng nhân viên",
+    "UNCHOOSE": "Mặc định",
+    "CATEGORY_NAME": "Loại ngày nghỉ",
+    "APPLY_EMP": "Áp dụng cho nhân viên",
+    "ENTER_EMP": "Nhập tên nhân viên",
+    "NO_RESULT": "Không có nhân viên nào",
+    "EMP": "Nhân viên"
+  },
+  "DAY_OFF_REQUEST_PAGE": {
+    "TITLE": "Danh sách yêu cầu nghỉ phép",
+    "PENDING": "Đang xử lý",
+    "APPROVED": "Đã duyệt",
+    "CANCELLED": "Đã hủy",
+    "DENIED": "Đã từ chối",
+    "APPROVE": "Duyệt",
+    "CANCEL": "Hủy bỏ",
+    "DENY": "Từ chối",
+    "DELETE": "Xóa"
+  },
+  "CONFIRM_MODAL": {
+    "APPROVE_TITLE": "Xác nhận duyệt yêu cầu nghỉ phép",
+    "APPROVE_PARAM": "Yêu cầu này sẽ được chấp thuận. Thao tác này không thể hoàn tác. Bạn có muốn tiếp tục?",
+    "DENY_TITLE": "Xác nhận từ chối yêu cầu nghỉ phép",
+    "DENY_PARAM": "Yêu cầu này sẽ bị từ chối. Thao tác này không thể hoàn tác. Bạn có muốn tiếp tục?",
+    "CANCEL_TITLE": "Xác nhận hủy yêu cầu ngày phép",
+    "CANCEL_PARAM": "Yêu cầu này sẽ bị hủy bỏ. Thao tác này không thể hoàn tác. Bạn có muốn tiếp tục?",
+    "DELETE_TITLE": "Xác nhận xóa yêu cầu ngày phép",
+    "DELETE_PARAM": "Yêu cầu này sẽ bị xóa. Thao tác này không thể hoàn tác. Bạn có muốn tiếp tục?"
+  },
+  "DEVICE_EDIT": {
+    "EDIT_TITLE": "Chỉnh sửa thông tin thiết bị.",
+    "CREATE_TITLE": "Tạo thiết bị",
+    "DEVICE_NAME": "Tên thiết bị",
+    "DEVICE_NAME_REQUIRED": "Hãy nhập tên thiết bị",
+    "DEVICE_NAME_MAX_LENGTH": "Tên thiết bị không được vượt quá 40 ký tự.",
+    "DEVICE_NAME_MIN_LENGTH": "Tên thiết bị phải có ít nhất 2 ký tự",
+    "PRICE_REQUIRED": "Hãy nhập giá tiền của thiết bị.",
+    "PRICE_PATTERN": "Giá tiền của thiết bị phải là một số  dương",
+    "DESCRIPTION_MIN_LENGTH": "Mô tả phải có ít nhất 6 ký tự",
+    "PRICE_MIN": "Giá tiền không được phép nhỏ hơn 1đ"
+  },
+  "DEVICE_HISTORY": {
+    "TITLE": "Danh sách lịch sử thiết bị",
+    "DEVICE_NAME": "Tên thiết bị",
+    "DISCARDED": "Đã loại bỏ",
+    "IN_INVENTORY": "Trong kho",
+    "ASSIGNED": "Đã giao",
+    "TITLE_DETAIL": "Chi tiết lịch sử thiết bị",
+    "DEVICE_INFO": "Thông tin thiết bị",
+    "USER_INFO": "Thông tin người dùng",
+    "PRESENT": "Hiện tại",
+    "BACK": "Quay lại"
+  },
+  "DEVICE_ASSIGN": {
+    "TITLE": "Cung cấp thiết bị cho nhân viên",
+    "NO_ASSIGN": "Không bàn giao"
+  },
+  "DEVICE_CONFIRM": {
+    "DISCARD_TITLE": "Xác nhận loại bỏ thiết bị",
+    "DISCARD_PARAM": "Trạng thái của thiết bị này sẽ được thay đổi thành 'ĐÃ LOẠI BỎ'. Thao tác này không thể hoàn tác. Bạn có muốn tiếp tục?",
+    "INVENTORY_TITLE": "Xác nhận di chuyển thiết bị vào kho",
+    "INVENTORY_PARAM": "Trạng thái của thiết bị này sẽ được thay đổi thành 'TRONG KHO'. Bạn có muốn tiếp tục?"
+  },
+  "DEVICE_CATEGORIES_PAGE": {
+    "TITLE": "Danh sách loại thiết bị",
+    "NAME": "Loại thiết bị",
+    "CREATE": "Tạo loại thiết bị",
+    "DELETE_TITLE": "Xóa loại thiết bị",
+    "EDIT_TITLE": "Chỉnh sửa loại thiết bị",
+    "NAME_MAXLENGTH": "Tên thiết bị không được phép vượt quá 100 ký tự"
+  },
+  "ERROR": {
+    "TITLE_404": "404",
+    "CONTENT_404": "Oops! Không tìm thấy",
+    "DESC_404": "Xin lỗi, đã xảy ra lỗi, không tìm thấy trang được yêu cầu!",
+    "TITLE_5XX": "5xx",
+    "CONTENT_5XX": "Houston, Đã có vấn đề xảy ra!",
+    "DESC_5XX": "Trang bạn đang tìm tạm thời không có sẵn.",
+    "BUTTON": "Trở lại trang chủ"
+  },
+  "PAGE_404": {
+    "TITLE": "404"
+  },
+  "PAGE_5XX": {
+    "TITLE": "5xx"
+  },
+  "CHANGE_PASSWORD": {
+    "TITLE": "Thay đổi mật khẩu",
+    "SUBMIT": "Lưu",
+    "NEW_PASSWORD": "Mật khẩu mới",
+    "CONFIRM_PASSWORD": "Xác nhận mật khẩu",
+    "OLD_PASSWORD": "Mật khẩu cũ"
+  },
+  "RESET_PASSWORD": {
+    "TITLE": "Khôi phục mật khẩu",
+    "PARAMS1": "Hãy nhập địa chỉ email khôi phục",
+    "PARAMS2": "Hãy nhập mã vừa được gửi đến email của bạn",
+    "PARAMS3": "Hãy nhập mật khẩu mới",
+    "NAVIGATE_TO_LOGIN": "Trở lại trang đăng nhập",
+    "NEXT": "Tiếp tục",
+    "INCORRECT": "Mật khẩu không đúng!",
+    "TOKEN_REQUIRED": "Hãy nhập Token!"
+  },
+  "NOT_SUPPORTED": {
+    "TITLE": "Không hỗ trợ",
+    "ERROR_CONTENT": "Trình duyệt của bạn không được hỗ trợ",
+    "ERROR_DESC": "Vui lòng dùng trình duyệt khác để truy cập"
+  },
+  "MESSAGE": {
+    "NO_USER": "Không tìm thấy tài khoản",
+    "NO_TOKEN": "Mã đăng nhập không đúng",
+    "NO_ACC": "Email hoặc mật khẩu không đúng",
+    "EMPLOYEE_FORMER": "Trạng thái của nhân viên này đã được thay đổi thành 'CỰU NHÂN VIÊN' thành công!",
+    "EMPLOYEE_ACTIVE": "Trạng thái của nhân viên này đã được thay đổi thành 'ĐANG HOẠT ĐỘNG' thành công!",
+    "REQUEST_DAY_OFF": "Duyệt phét thành công!",
+    "ASSIGN_DEVICE": "Bàn giao thiết bị thành công!",
+    "DELETE_SUCCESS": "Xóa thành công",
+    "DISCARD_DEVICE": "Thay đổi trạng thái Bị lỗi cho thiết bị thành công!",
+    "INVENTORY": "Thay đổi trạng thái Trong kho cho thiết bị thành công!",
+    "WRONG_ACC": "Tài khoản không đúng",
+    "PERMISSION": "Bạn không có quyền",
+    "REQUEST_LONG": "Yêu cầu thất bại",
+    "STATUS": "Trạng thái không hợp lệ",
+    "RESET_SUCCESSFULLY": "Khôi phục mật khẩu thành công",
+    "CHANGE_SUCCESSFULLY": "Thay đổi mật khẩu thành công",
+    "PASSWORD_INCORRECT": "Mật khẩu của bạn không đúng!",
+    "SERVER_ERROR": "Lỗi máy chủ nội bộ",
+    "DAY_OFF_CATEGORY_IS_INACTIVED": "Loại ngày nghỉ này đã bị vô hiệu hóa!",
+    "CANCEL_SUCCESS": "Hủy bỏ yêu cầu thành công!",
+    "DELETE_REQUEST_SUCCESS": "Xóa yêu cầu thành công!",
+    "APPROVE_SUCCESS": "Phê duyệt yêu cầu thành công!",
+    "DENY_SUCCESS": "Từ chối yêu cầu thành công!"
+  },
+  "CONFIRM_NOTIFY": {
+    "DAY_OFF_DEACTIVE": "Vô hiệu hóa loại ngày phép này?",
+    "DAY_OFF_ACTIVE": "Kích hoạt loại ngày phép này?",
+    "CONTENT_CONFIRM": "Trạng thái của loại ngày phép sẽ được thay đổi. Bạn có muốn tiếp tục?",
+    "DEACTIVE_SUCCESS": "Trạng thái của loại ngày phép đã được thay đổi thành 'KHÔNG HOẠT ĐỘNG' thành công!",
+    "ACTIVE_SUCCESS": "Trạng thái của loại ngày phép đã được thay đổi thành 'HOẠT ĐỘNG' thành công!"
+  },
+  "ACCOUNT_INFORMATION": {
+    "TITLE": "Thông tin tài khoản"
+  },
+  "PAYROLL": {
+    "TITLE": "Bảng lương tháng",
+    "MONTH": "Tháng",
+    "TOTAL_PAID": "Số ngày nghỉ được trả lương",
+    "TOTAL_NON_PAID": "Số ngày nghỉ không lương",
+    "TOTAL": "Tổng cộng",
+    "SALARY_PER_DAY": "Lương theo ngày",
+    "MONTHLY": "Bảng lương tháng ",
+    "EXPORT": "Xuất file xlsx"
+  }
+}
